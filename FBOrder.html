@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Box Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Login Modal -->
+<div id="loginModal" style="display:block; background:#eee; padding:20px;">
+  <h3>Login</h3>
+  <label for="username">Username</label>
+  <input type="text" id="username" placeholder="Username" required><br><br>
+
+  <label for="contact">Contact Number</label>
+  <input type="text" id="contact" placeholder="Contact Number" required><br><br>
+
+  <label for="loginEmail">Email (optional)</label>
+  <input type="email" id="loginEmail" placeholder="Email"><br><br>
+
+  <button onclick="submitLogin()">Login</button>
+</div>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>SR Healthy Fruit Box Delivery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#boxes">Our Boxes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Fresh Fruits Delivered To Your Door</h2>
+            <p>Order your premium fruit box now and enjoy healthy, fresh produce every week!</p>
+            <p>Price: 999/Month</p>
+			
+            <button id="order-now">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Fruit Boxes Section -->
+    <section id="boxes" class="fruit-boxes">
+        <h2>Our Fruit Boxes</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="IMAGES/REGULAR.png" alt="Regular Box">
+                <h3>Regular Box</h3>
+                <p>A mix of seasonal fruits delivered 5 days a week. Perfect for a healthy snack!</p>
+                <p>Price : 1999/Month</p>
+				
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="box">
+                <img src="IMAGES/premium.png" alt="Premium Box">
+                <h3>Premium Box</h3>
+                <p>Top-quality fruits,healthy Nuts, handpicked for you! Get the best fruits all year round.</p>
+                <p>Price : 2499/Month</p>
+				
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="box">
+                <img src="IMAGES/SEASONAL.png" alt="Seasonal Box">
+                <h3>Seasonal Box</h3>
+                <p>Enjoy the best seasonal fruits available each month. Delivered to your doorstep!</p>
+                <p>Price : 2199/Month</p>
+				
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At FruitBox Delivery, we are passionate about providing fresh, healthy fruits to your doorstep. Our fruit boxes are sourced from local farms and delivered right to your door, ensuring the highest quality for you and your family.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FruitBox Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
